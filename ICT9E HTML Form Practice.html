@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta xharset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <form>
+  <h2 style="text-align: center; font-weight: bolder;">9-Emerald Bistro | Pizza on Demand</h2><br>
+  <hr style="width: 850px;">
+  <p style="text-align: center;"> Our 12" wood-fired pizzas are available for deliver. build your custom pizza and we'll deliver it within an hour.</p>
+  <style>
+
+    body {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.alphacoders.com/276/thumb-1920-276653.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    form{
+        background-color:firebrick;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+    }
+
+    fieldset {
+      width: 90%;
+      margin: auto;
+    }
+    
+  </style>
+    <fieldset>
+    <legend>Your Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+      <label place>Address:</label>
+      <input type="text" id="address" name="address" placeholder="Manila" required><br>
+      <label for="tnumber">Telephone Number:</label>
+      <input type="text" id="tnumber" name="tnumber" placeholder="67" required><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="example@gmail.com" required><br>
+      <label for="dpackage">Delivery Package:</label>
+      <label type="text" id="dpackage" name="dpackage" value="lorem" required><br>
+      <textarea name="message" placeholder="Don't put too much text!" required></textarea>
+      <label for="message"><br>
+    </fieldset>
+</head>
+<body>
+  <h2 style="text-align: center;">Design your dream pizza:</h2>
+  <fieldset>
+  <legend>Pizza Specs</legend>
+    <fieldset>
+        <legend>Crust (Choose one):</legend>
+        <input type="radio" id="CW" name="Pizza_Crusts" value="CW" required>
+         <label for="CW">Classic White</label><br>
+         <input type="radio" id="MG" name="Pizza_Crusts" value="MG" required>
+         <label for="MG">Multigrain</label><br>
+         <input type="radio" id="C-SS" name="Pizza_Crusts" value="C-SS" required>
+         <label for="C-SS">Cheesed-stuffed Crust</label><br>
+         <input type="radio" id="GF" name="Pizza_Crusts" value="GF" required>
+         <label for="GF">Gluten-free</label><br>
+    </fieldset><br>
+    <fieldset>
+     <legend>Toppings (choose as many as you want)</legend>
+      <input type="checkbox" id="toppings1" name="toppings1" value="Pepporoni" requied>
+      <label for="toppings1"> Pepporoni</label><br>
+      <input type="checkbox" id="toppings2" name="toppings2" value="Pineapple" required>
+      <label for="toppings2"> Pineapple</label><br>
+      <input type="checkbox" id="toppings3" name="toppings3" value="Sausage" required>
+      <label for="toppings3"> Sausage</label><br>
+      <input type="checkbox" id="toppings3" name="toppings4" value="Cheese" required>
+      <label for="toppings4"> Cheese</label>
+    </fieldset><br>
+    <fieldset>
+    <legend>Number</legend>
+      <label for="pizza">How many Pizzas?</label>
+      <select id="pizza" name="amount">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        </select>
+    </fieldset><br>
+  <input type="submit" value="Let's eat some Pizza!">
+  <input type="reset" value="Reset">
+</body>
+</html>
